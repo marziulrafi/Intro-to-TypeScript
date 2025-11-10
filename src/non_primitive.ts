@@ -11,3 +11,18 @@ mixedArr.push(546);
 let coordinates: [number, number] = [20, 30, 50];
 let couple: [string, string] = ["Husband", "wife"];
 let destination: [string, string, number] = ["Dhaka", "Chattogram", 3];
+
+
+
+// reference type : object
+
+const user: {
+    firstName: string;
+    middleName?: string; // optional type
+    lastName: string;
+    isMarried: boolean;
+} = {
+    firstName: "Marziul",
+    lastName: "Rafi",
+    isMarried: true,
+};
