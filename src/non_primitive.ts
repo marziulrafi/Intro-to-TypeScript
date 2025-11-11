@@ -14,15 +14,29 @@ let destination: [string, string, number] = ["Dhaka", "Chattogram", 3];
 
 
 
-// reference type : object
+// reference type : Object
 
 const user: {
     firstName: string;
     middleName?: string; // optional type
-    lastName: string;
-    isMarried: boolean;
+    lastName: string
+    readonly nickname: string; // access modifier
+    family: "Khondaker" // value -> type [Literal type]
+    isMarried: boolean
 } = {
     firstName: "Marziul",
     lastName: "Rafi",
-    isMarried: true,
+    nickname: "Rafi",
+    family: "Khondaker",
+    isMarried: false,
 };
+
+
+
+// user.nickname = 'Karim' (Not changable)
+// user.family = 'Khondaker!!' (Not changable)
+
+
+
+user.lastName = 'Karim'
+console.log(user);
