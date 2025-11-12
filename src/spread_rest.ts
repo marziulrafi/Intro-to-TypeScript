@@ -20,3 +20,16 @@ const userInfo = { ...user, ...otherInfo };
 
 console.log(userInfo);
 
+
+
+
+
+// Rest opeartor
+
+const sendInvite = (...friends: string[]) => {
+    friends.forEach((friend: string) =>
+        console.log(`Send invitation to ${friend}`)
+    );
+};
+
+sendInvite("Karim", "Messi");
