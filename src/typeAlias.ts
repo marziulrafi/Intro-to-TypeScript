@@ -12,6 +12,8 @@ type User = {
     };
 };
 
+
+
 const user1: User = {
     id: 123,
     name: {
@@ -27,7 +29,7 @@ const user1: User = {
 };
 
 const user2: User = {
-    id: 123,
+    id: 127,
     name: {
         firstName: "Mr.",
         lastName: "Y",
