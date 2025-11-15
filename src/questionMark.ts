@@ -5,6 +5,7 @@
 
 
 // Ternary
+
 const EligibleForMarriage = (age: number) => {
     const result = age >= 21 ? "You are eligible" : "You are not eligible !";
 
@@ -15,12 +16,15 @@ EligibleForMarriage(21);
 
 
 // Nullish Coalescing
-const userTheme = "Green theme";
+
+// const userTheme = "Green theme";
+const userTheme = undefined;
 const selectedTheme = userTheme ?? "Light theme";
 console.log(selectedTheme);
 
 
-const isAuthenticated = "";
+// const isAuthenticated = "";
+const isAuthenticated = null;
 const resultWithTernary = isAuthenticated ? isAuthenticated : "You are guest !";
 
 
